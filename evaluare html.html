@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="‪C:\Users\Raluca\Desktop\unit2\ralu.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"
+
+
+</head>
+<body>
+	<h1>Raluca Nicoleta DREVE</h1>
+	<div>
+	<h4><a href="https://ro.mail.yahoo.com/">dreve_raluca@yahoo.com</a></h4>
+	<br>
+	<br>
+	</div>
+	<div class="right">
+	<h3>Specificatii tehnice ale statiei principale de lucru</h3>
+	</div>
+	<br>
+
+<table >
+  <tr>
+    <th>Denumire componenta</th>
+    <th>Parametrii</th> 
+    <th>Producător</th>
+  </tr>
+  <tr>
+    <td>Procesor i5-6200</td>
+    <td>10400 2.9GHz</td>
+    <td>Intel</td>
+  </tr>
+  <tr>
+    <td>8GB RAM/DDR4</td>
+    <td>1TB HDD 7.2K SATA 3.5 inch</td>
+    <td>Kingston</td>
+  </tr>
+  <tr>
+    <td>Placa video Intel HD Graphics 520  </td>
+    <td>8GB GDDR5 256-bit</td>
+    <td>Intel</td>
+  </tr>
+  <tr>
+    <td>Cooler Procesor UX200 </td>
+    <td>240 ARGB</td>
+    <td>UX200</td>
+  </tr>
+  <tr>
+    <td>Placa de baza X556QU </td>
+    <td>B460 HD3</td>
+    <td>Asus</td>
+  </tr>
+  <tr>
+    <td>Memorie de stocare 1TB HDD</td>
+    <td>DVD-RAM 4.7GB</td>
+    <td>Western Digital</td>
+  </tr>
+  <tr>
+    <td>Sursa S12III-500, 80+ Bronze, 500W</td>
+    <td>500W</td>
+    <td>Seasonic</td>
+  </tr>
+  </table>
+  <div class="text">
+  <h3 class="center" >Structura retelei personale si accesul la internet</h3>
+  <img src="retea123.png" width="500" height="400" >
+  <h3 class="position">Caracterisiticile conexiunii la retea</h3>
+  <ol class="c">
+  <li>Adresa MAC: 0895AD9B0D6</li>
+  <li>Adresa IP: 192.168.0.14</li>
+  <li>Debit la download: 30.60</li>
+  <li>Debit la upload: 5.73</li>
+</ol> 
+  </div>
+
+ <button class="position1" type="button" onclick="function()">Utilizare resurse (slideshow)</button>
+  
+  
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="dreve1.png" style="width:50%">
+</div>
+
+<div class="mySlides fade"> 
+<img src="dreve2.png" style="width:50%"> 
+</div>
+
+<div class="mySlides fade">
+<img src="dreve3.png" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+<img src="dreve4.png" style="width:50%"> 
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+</html>
